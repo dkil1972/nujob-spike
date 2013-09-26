@@ -1,2 +1,7 @@
 %h1 Home#index
 %p Find me in app/views/home/index.html.haml
+
+%h2 Enter Company Details:
+= form_for @company, :class => "form-horizontal", :role => "form" do |f|
+  = f.label :name
+  = f.text_field :name
