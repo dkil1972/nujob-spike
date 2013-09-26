@@ -3,5 +3,8 @@
 
 %h2 Enter Company Details:
 = form_for @company, :class => "form-horizontal", :role => "form" do |f|
-  = f.label :name
-  = f.text_field :name
+  .form-group
+    = f.label :name, :class => "control-label"
+    = f.text_field :name, :class => "form-control", :placeholder => "Company Name"
+  .form-group
+    = f.submit :class => "btn btn-default"
